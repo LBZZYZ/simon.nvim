@@ -1,0 +1,19 @@
+# 目标 Lua 版本，可选: Lua51, Lua52, Lua53, Lua54, Luau
+syntax = "Lua54"
+
+# 缩进类型，可选: "Tabs" (制表符) 或 "Spaces" (空格)
+indent_type = "Spaces"
+
+# 缩进宽度（如果上面选了 Spaces，这里一般设为 2 或 4）
+indent_width = 4
+
+# 一行代码的最大长度，超过这个长度会自动换行
+column_width = 120
+
+# 字符串引号类型，可选: "Single" (单引号), "Double" (双引号), "AutoPreferSingle", "AutoPreferDouble"
+# "AutoPreferSingle" 会优先使用单引号，除非字符串内部本身包含单引号
+quote_style = "AutoPreferSingle"
+
+# 语句末尾是否加分号，可选: "Always", "Never", "None"
+# "None" 表示保持原样，"Never" 会自动帮你删掉非必要的分号（推荐，让代码更干净）
+call_parentheses = "Always"
