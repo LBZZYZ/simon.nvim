@@ -26,7 +26,7 @@ return {
             filetype = 'NvimTree',
             text = 'TablePie',
             text_align = 'left',
-            separator = true,
+            separator = false,
           },
         },
       },
