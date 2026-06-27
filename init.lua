@@ -23,5 +23,7 @@ vim.keymap.set('n', '<leader>fe', ':NvimTreeFocus<CR>', { silent = true, desc = 
 vim.keymap.set('n', '<leader>h', '<cmd>BufferLineCyclePrev<cr>', { desc = 'Prev Buffer' })
 vim.keymap.set('n', '<leader>l', '<cmd>BufferLineCycleNext<cr>', { desc = 'Next Buffer' })
 
+-- vim.cmd.colorscheme('vim')
+
 require('config.lsp')
 require('config.lazy')

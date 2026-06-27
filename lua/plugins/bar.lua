@@ -1,61 +1,52 @@
 return {
   {
-
     'nvim-lualine/lualine.nvim',
     dependencies = { 'nvim-tree/nvim-web-devicons' },
-    config = function()
-      require('lualine').setup({
-        options = {
-          globalstatus = true,
-          theme = 'material',
-        },
-      })
-    end,
+    opts = {
+      options = {
+        globalstatus = true,
+        theme = 'material',
+      },
+    },
   },
   {
-
     'akinsho/bufferline.nvim',
-    version = '*',
     dependencies = { 'nvim-tree/nvim-web-devicons' },
-    config = function()
-      require('bufferline').setup({
-        options = {
-          diagnostics = 'nvim_lsp', -- 如果用了 LSP，可以显示错误图标
-          offsets = {
-            {
-              filetype = 'NvimTree',
-              text = 'File Explorer',
-              text_align = 'left',
-              separator = true,
-            },
+    opts = {
+      options = {
+        diagnostics = 'nvim_lsp',
+        offsets = {
+          {
+            filetype = 'NvimTree',
+            text = 'TablePie',
+            text_align = 'left',
+            separator = true,
           },
         },
-      })
-    end,
+      },
+    },
   },
   -- 文件管理器
   {
     'nvim-tree/nvim-tree.lua',
     version = '*',
     dependencies = { 'nvim-tree/nvim-web-devicons' },
-    config = function()
-      require('nvim-tree').setup({
-        sort_by = 'case_sensitive',
-        git = {
-          -- 不显示 git 图标
-          enable = false,
-        },
-        view = {
-          width = 30,
-        },
-        renderer = {
-          group_empty = true,
-        },
-        filters = {
-          dotfiles = false,
-        },
-      })
-    end,
+    opts = {
+      sort_by = 'case_sensitive',
+      git = {
+        -- hide git icon
+        enable = false,
+      },
+      view = {
+        width = 40,
+      },
+      renderer = {
+        group_empty = true,
+      },
+      filters = {
+        dotfiles = true,
+      },
+    },
   },
   -- 缩进引导线
   {
