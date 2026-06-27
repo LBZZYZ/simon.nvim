@@ -5,7 +5,7 @@ syntax = "Lua54"
 indent_type = "Spaces"
 
 # 缩进宽度（如果上面选了 Spaces，这里一般设为 2 或 4）
-indent_width = 4
+indent_width = 2
 
 # 一行代码的最大长度，超过这个长度会自动换行
 column_width = 120

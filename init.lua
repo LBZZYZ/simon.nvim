@@ -20,4 +20,8 @@ vim.keymap.set('n', '<leader>e', ':NvimTreeToggle<CR>', { silent = true, desc = 
 -- 聚焦到文件树 (Focus)
 vim.keymap.set('n', '<leader>fe', ':NvimTreeFocus<CR>', { silent = true, desc = 'Focus File Tree' })
 
+vim.keymap.set('n', '<leader>h', '<cmd>BufferLineCyclePrev<cr>', { desc = 'Prev Buffer' })
+vim.keymap.set('n', '<leader>l', '<cmd>BufferLineCycleNext<cr>', { desc = 'Next Buffer' })
+
+require('config.lsp')
 require('config.lazy')
