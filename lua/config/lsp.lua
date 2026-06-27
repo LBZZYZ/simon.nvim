@@ -1,6 +1,5 @@
 -- enable lsp
 vim.lsp.enable({ 'lua_ls', 'clangd' })
-
 vim.api.nvim_create_autocmd('LspAttach', {
 
   group = vim.api.nvim_create_augroup('simon.lsp', {}),
