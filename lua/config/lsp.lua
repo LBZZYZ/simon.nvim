@@ -6,7 +6,7 @@ vim.api.nvim_create_autocmd('LspAttach', {
   group = vim.api.nvim_create_augroup('simon.lsp', {}),
 
   callback = function(ev)
-    local client = assert(vim.lsp.get_client_by_id(ev.data.client_id))
+    -- local client = assert(vim.lsp.get_client_by_id(ev.data.client_id))
 
     -- config keymaps
     vim.keymap.set('n', 'gD', vim.lsp.buf.declaration, { buffer = ev.buf, desc = 'LSP Goto Declaration' })
