@@ -1,5 +1,9 @@
 return {
   {
+    'lewis6991/gitsigns.nvim',
+    opts = {},
+  },
+  {
     'folke/tokyonight.nvim',
     lazy = false,
     priority = 1000,
